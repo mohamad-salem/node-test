@@ -15,7 +15,8 @@ app.get("/users", (req, res) => {
     res.json(users)
 })
 
-app.get("/user/:id", (req, res)=>{
-    const id = req.params.id
-    res.json(users[id])
+const not = ["test"]
+
+app.get("/not", (req, res)=>{
+    res.json(not)
 })
